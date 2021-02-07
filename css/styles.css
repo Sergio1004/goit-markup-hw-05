@@ -7,6 +7,8 @@
   --accent-color: #2196f3;
   --secondary-bg-color: #f5f4fa;
   --icon-color: #afb1b8;
+
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -121,6 +123,8 @@ p {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--title-color);
+
+  transition: color var(--animation);
 }
 
 .navigation-list-link:hover,
@@ -144,12 +148,15 @@ p {
 .header-address-link {
   display: flex;
   align-items: center;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
+
+  transition: color var(--animation);
 }
 
 .header-address-link:hover,
@@ -355,12 +362,16 @@ p {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+
+  transition: background-color var(--animation);
 }
 
 .social-list-icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+
+  transition: fill var(--animation);
 }
 
 .social-list-link:focus,
@@ -394,10 +405,14 @@ p {
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+
+  transition: border-color var(--animation);
 }
 
 .our-clients-icon {
   fill: var(--icon-color);
+
+  transition: fill var(--animation);
 }
 
 .our-clients-link:hover,
@@ -485,6 +500,8 @@ p {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--animation);
 }
 
 .footer-social-list-link:hover,
@@ -528,6 +545,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--title-color);
   cursor: pointer;
+
+  transition: background-color var(--animation), color var(--animation);
 }
 
 .portfolio-button:focus,
@@ -562,6 +581,8 @@ p {
 .portfolio-link {
   display: block;
   text-decoration: none;
+
+  transition: box-shadow var(--animation);
 }
 
 .portfolio-link:focus,
